@@ -1,4 +1,4 @@
-pragma solidity ^0.4.11;
+pragma solidity ^0.5.8;
 
 /*  Copyright 2017 GoInto, LLC
 
@@ -28,7 +28,7 @@ import "./ratingstore.sol";
     above 5.  Raters can not rate more often than waitTime, nor can they rate 
     themselves.
 
-    Scores are returned as a false-float, where 425 = 4.25 on the Etherep scale.
+    Scores are returned asx a false-float, where 425 = 4.25 on the Etherep scale.
  */
 contract Etherep {
 
@@ -89,7 +89,7 @@ contract Etherep {
      * @param _storageAddress The address to the storage contract
      * @param _wait The minimum time in seconds a user has to wait between ratings
      */
-    function Etherep(address _manager, uint _fee, address _storageAddress, uint _wait) {
+    constructor (address _manager, uint _fee, address _storageAddress, uint _wait) public {
         manager = _manager;
         fee = _fee;
         storageAddress = _storageAddress;
@@ -109,7 +109,7 @@ contract Etherep {
      * Get debug
      * @return debug
      */
-    function getDebug() external constant returns (bool) {
+    function getDebug() external view returns (bool) {
         return debug;
     }
 
@@ -119,14 +119,14 @@ contract Etherep {
      */
     function setFee(uint newFee) external onlyBy(manager) {
         fee = newFee;
-        FeeChanged(fee);
+        emit FeeChanged(fee);
     }
 
     /**
      * Get the fee
      * @return fee The current fee in Wei
      */
-    function getFee() external constant returns (uint) {
+    function getFee() external view returns (uint) {
         return fee;
     }
 
@@ -136,14 +136,14 @@ contract Etherep {
      */
     function setDelay(uint _delay) external onlyBy(manager) {
         waitTime = _delay;
-        DelayChanged(waitTime);
+        emit DelayChanged(waitTime);
     }
 
     /**
      * Get the delay time
      * @return delay The current rating delay time in seconds
      */
-    function getDelay() external constant returns (uint) {
+    function getDelay() external view returns (uint) {
         return waitTime;
     }
 
@@ -159,17 +159,17 @@ contract Etherep {
      * Get the manager
      * @return manager The address of this contract's manager
      */
-    function getManager() external constant returns (address) {
+    function getManager() external view returns (address) {
         return manager;
     }
 
     /**
      * Drain fees
      */
-    function drain() external onlyBy(manager) {
-        require(this.balance > 0);
-        manager.transfer(this.balance);
-    }
+    // function drain() external onlyBy(manager) {
+    //     require(address(this).balance > 0);
+    //     manager.transfer(address(this).balance);
+    // }
 
     /** 
      * Adds a rating to an address' cumulative score
@@ -237,7 +237,7 @@ contract Etherep {
         lastRating[msg.sender] = now;
 
         // Send event of the rating
-        Rating(msg.sender, who, workRating);
+        emit Rating(msg.sender, who, workRating);
 
         // Add the new rating to their score
         store.add(who, workRating);
@@ -249,7 +249,7 @@ contract Etherep {
      * @param who The address to lookup
      * @return score The cumulative score
      */
-    function getScore(address who) external constant returns (int score) {
+    function getScore(address who) external view returns (int score) {
 
         // Get an instance of our storage contract: RatingStore
         RatingStore store = RatingStore(storageAddress);
@@ -279,7 +279,7 @@ contract Etherep {
      * @return score The cumulative score
      * @return count How many ratings have been made
      */
-    function getScoreAndCount(address who) external constant returns (int score, uint ratings) {
+    function getScoreAndCount(address who) external view returns (int score, uint ratings) {
 
         // Get an instance of our storage contract: RatingStore
         RatingStore store = RatingStore(storageAddress);

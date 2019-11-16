@@ -1,4 +1,4 @@
-pragma solidity ^0.4.11;
+pragma solidity ^0.5.8;
 
 /*  Copyright 2017 GoInto, LLC
 
@@ -61,7 +61,7 @@ contract RatingStore {
      * @param _manager The address that has full access to the contract
      * @param _controller The contract that can make write calls to this contract
      */
-    function RatingStore(address _manager, address _controller) {
+    constructor (address _manager, address _controller) public {
         manager = _manager;
         controller = _controller;
         debug = false;
@@ -102,7 +102,7 @@ contract RatingStore {
      * @return cumulative score
      * @return total ratings
      */
-    function get(address target) external constant returns (int, uint) {
+    function get(address target) external view returns (int, uint) {
         if (scores[target].exists == true) {
             return (scores[target].cumulativeScore, scores[target].totalRatings);
         } else {
@@ -122,7 +122,7 @@ contract RatingStore {
      * Return the manager
      * @return address The manager address
      */
-    function getManager() external constant returns (address) {
+    function getManager() external view returns (address) {
         return manager;
     }
 
@@ -138,7 +138,7 @@ contract RatingStore {
      * Return the controller
      * @return address The manager address
      */
-    function getController() external constant returns (address) {
+    function getController() external view returns (address) {
         return controller;
     }
 
@@ -154,7 +154,7 @@ contract RatingStore {
      * Return the debug setting
      * @return bool debug
      */
-    function getDebug() external constant returns (bool) {
+    function getDebug() external view returns (bool) {
         return debug;
     }
 
