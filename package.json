@@ -4,15 +4,26 @@
   "description": "",
   "main": "truffle-config.js",
   "directories": {
-    "test": "test"
+    "test": "TestEtherep"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config prod.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lite-server": "^2.5.4",
+    "ts-loader": "^6.2.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
     "zeppelin-solidity": "1.12.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "webpack-dev-server": "^3.9.0"
   }
 }

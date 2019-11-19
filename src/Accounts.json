@@ -2,31 +2,31 @@
   {
     "id": 0,
     "name": "Kang",
-    "address": "0x21Fd34A56ea1b94d93Bec24777f2b7d6099BfcAC",
+    "contract_address": "0x21Fd34A56ea1b94d93Bec24777f2b7d6099BfcAC"
 
   },
   {
     "id": 1,
     "name": "Choi",
-    "address": "0xB0D4A8e869F83F9c03E625bCC60B533014DC2AA6",
+    "contract_address": "0xB0D4A8e869F83F9c03E625bCC60B533014DC2AA6"
 
   },
   {
     "id": 2,
     "name": "Woo",
-    "address": "0x16CB5b77226C7FCdB91329A6F96213a0a18FD72d",
+    "contract_address": "0x16CB5b77226C7FCdB91329A6F96213a0a18FD72d"
 
   },
   {
     "id": 3,
     "name": "Kim",
-    "address": "0x205e053536A85b6EbC2131150793046Ab4eE7126",
+    "contract_address": "0x205e053536A85b6EbC2131150793046Ab4eE7126"
 
   },
   {
     "id": 4,
     "name": "Yoon",
-    "address": "0xa31Cb0B8b7B7D513C1BE57039284b4bEC9f4E007",
+    "contract_address": "0xa31Cb0B8b7B7D513C1BE57039284b4bEC9f4E007"
 
   }
 
