@@ -76,14 +76,14 @@
     "absolutePath": "/home/cecilimon/Auctionly/contracts/ratestorage.sol",
     "exportedSymbols": {
       "RateStorage": [
-        457
+        491
       ]
     },
-    "id": 458,
+    "id": 492,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 332,
+        "id": 366,
         "literals": [
           "solidity",
           "^",
@@ -99,23 +99,23 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 457,
+        "id": 491,
         "linearizedBaseContracts": [
-          457
+          491
         ],
         "name": "RateStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "RateStorage.Score",
-            "id": 339,
+            "id": 373,
             "members": [
               {
                 "constant": false,
-                "id": 334,
+                "id": 368,
                 "name": "exists",
                 "nodeType": "VariableDeclaration",
-                "scope": 339,
+                "scope": 373,
                 "src": "71:11:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -124,7 +124,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 333,
+                  "id": 367,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "71:4:2",
@@ -138,10 +138,10 @@
               },
               {
                 "constant": false,
-                "id": 336,
+                "id": 370,
                 "name": "cumulativeScore",
                 "nodeType": "VariableDeclaration",
-                "scope": 339,
+                "scope": 373,
                 "src": "90:19:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -150,7 +150,7 @@
                   "typeString": "int256"
                 },
                 "typeName": {
-                  "id": 335,
+                  "id": 369,
                   "name": "int",
                   "nodeType": "ElementaryTypeName",
                   "src": "90:3:2",
@@ -164,10 +164,10 @@
               },
               {
                 "constant": false,
-                "id": 338,
+                "id": 372,
                 "name": "totalRatings",
                 "nodeType": "VariableDeclaration",
-                "scope": 339,
+                "scope": 373,
                 "src": "117:17:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -176,7 +176,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 337,
+                  "id": 371,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "117:4:2",
@@ -191,27 +191,27 @@
             ],
             "name": "Score",
             "nodeType": "StructDefinition",
-            "scope": 457,
+            "scope": 491,
             "src": "50:89:2",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 343,
+            "id": 377,
             "name": "scores",
             "nodeType": "VariableDeclaration",
-            "scope": 457,
+            "scope": 491,
             "src": "143:42:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
               "typeString": "mapping(address => struct RateStorage.Score)"
             },
             "typeName": {
-              "id": 342,
+              "id": 376,
               "keyType": {
-                "id": 340,
+                "id": 374,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "152:7:2",
@@ -223,18 +223,18 @@
               "nodeType": "Mapping",
               "src": "143:26:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                 "typeString": "mapping(address => struct RateStorage.Score)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 341,
+                "id": 375,
                 "name": "Score",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 339,
+                "referencedDeclaration": 373,
                 "src": "163:5:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Score_$339_storage_ptr",
+                  "typeIdentifier": "t_struct$_Score_$373_storage_ptr",
                   "typeString": "struct RateStorage.Score"
                 }
               }
@@ -244,14 +244,14 @@
           },
           {
             "body": {
-              "id": 383,
+              "id": 417,
               "nodeType": "Block",
               "src": "516:189:2",
               "statements": [
                 {
                   "condition": {
                     "argumentTypes": null,
-                    "id": 356,
+                    "id": 390,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -266,25 +266,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 352,
+                          "id": 386,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "529:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 354,
+                        "id": 388,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 353,
+                          "id": 387,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 345,
+                          "referencedDeclaration": 379,
                           "src": "536:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -298,18 +298,18 @@
                         "nodeType": "IndexAccess",
                         "src": "529:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 355,
+                      "id": 389,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "exists",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 334,
+                      "referencedDeclaration": 368,
                       "src": "529:21:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -322,18 +322,18 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 368,
+                  "id": 402,
                   "nodeType": "IfStatement",
                   "src": "524:83:2",
                   "trueBody": {
-                    "id": 367,
+                    "id": 401,
                     "nodeType": "Block",
                     "src": "552:55:2",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 365,
+                          "id": 399,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -342,25 +342,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 357,
+                              "id": 391,
                               "name": "scores",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 343,
+                              "referencedDeclaration": 377,
                               "src": "564:6:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                                 "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                               }
                             },
-                            "id": 359,
+                            "id": 393,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 358,
+                              "id": 392,
                               "name": "target",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 345,
+                              "referencedDeclaration": 379,
                               "src": "571:6:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -374,7 +374,7 @@
                             "nodeType": "IndexAccess",
                             "src": "564:14:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Score_$339_storage",
+                              "typeIdentifier": "t_struct$_Score_$373_storage",
                               "typeString": "struct RateStorage.Score storage ref"
                             }
                           },
@@ -386,7 +386,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "74727565",
-                                "id": 361,
+                                "id": 395,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -404,7 +404,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "30",
-                                "id": 362,
+                                "id": 396,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -422,7 +422,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "30",
-                                "id": 363,
+                                "id": 397,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -453,18 +453,18 @@
                                   "typeString": "int_const 0"
                                 }
                               ],
-                              "id": 360,
+                              "id": 394,
                               "name": "Score",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 339,
+                              "referencedDeclaration": 373,
                               "src": "581:5:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_struct$_Score_$339_storage_ptr_$",
+                                "typeIdentifier": "t_type$_t_struct$_Score_$373_storage_ptr_$",
                                 "typeString": "type(struct RateStorage.Score storage pointer)"
                               }
                             },
-                            "id": 364,
+                            "id": 398,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -474,17 +474,17 @@
                             "nodeType": "FunctionCall",
                             "src": "581:17:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Score_$339_memory",
+                              "typeIdentifier": "t_struct$_Score_$373_memory",
                               "typeString": "struct RateStorage.Score memory"
                             }
                           },
                           "src": "564:34:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Score_$339_storage",
+                            "typeIdentifier": "t_struct$_Score_$373_storage",
                             "typeString": "struct RateStorage.Score storage ref"
                           }
                         },
-                        "id": 366,
+                        "id": 400,
                         "nodeType": "ExpressionStatement",
                         "src": "564:34:2"
                       }
@@ -494,7 +494,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 374,
+                    "id": 408,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -505,25 +505,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 369,
+                          "id": 403,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "614:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 371,
+                        "id": 405,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 370,
+                          "id": 404,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 345,
+                          "referencedDeclaration": 379,
                           "src": "621:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -537,18 +537,18 @@
                         "nodeType": "IndexAccess",
                         "src": "614:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 372,
+                      "id": 406,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "cumulativeScore",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 336,
+                      "referencedDeclaration": 370,
                       "src": "614:30:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -559,11 +559,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 373,
+                      "id": 407,
                       "name": "cumulative",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 347,
+                      "referencedDeclaration": 381,
                       "src": "647:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -576,14 +576,14 @@
                       "typeString": "int256"
                     }
                   },
-                  "id": 375,
+                  "id": 409,
                   "nodeType": "ExpressionStatement",
                   "src": "614:43:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 381,
+                    "id": 415,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -594,25 +594,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 376,
+                          "id": 410,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "665:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 378,
+                        "id": 412,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 377,
+                          "id": 411,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 345,
+                          "referencedDeclaration": 379,
                           "src": "672:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -626,18 +626,18 @@
                         "nodeType": "IndexAccess",
                         "src": "665:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 379,
+                      "id": 413,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "totalRatings",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 338,
+                      "referencedDeclaration": 372,
                       "src": "665:27:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -648,11 +648,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 380,
+                      "id": 414,
                       "name": "total",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 349,
+                      "referencedDeclaration": 383,
                       "src": "695:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -665,29 +665,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 382,
+                  "id": 416,
                   "nodeType": "ExpressionStatement",
                   "src": "665:35:2"
                 }
               ]
             },
             "documentation": "Set a Score\n@param target The address' score we're setting\n@param cumulative The cumulative score for the address\n@param total Total individual ratings for the address\n@return success If the set was completed successfully",
-            "id": 384,
+            "id": 418,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "set",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 350,
+              "id": 384,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 345,
+                  "id": 379,
                   "name": "target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 384,
+                  "scope": 418,
                   "src": "462:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -696,7 +696,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 344,
+                    "id": 378,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "462:7:2",
@@ -711,10 +711,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 347,
+                  "id": 381,
                   "name": "cumulative",
                   "nodeType": "VariableDeclaration",
-                  "scope": 384,
+                  "scope": 418,
                   "src": "478:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -723,7 +723,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 346,
+                    "id": 380,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
                     "src": "478:3:2",
@@ -737,10 +737,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 349,
+                  "id": 383,
                   "name": "total",
                   "nodeType": "VariableDeclaration",
-                  "scope": 384,
+                  "scope": 418,
                   "src": "494:10:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -749,7 +749,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 348,
+                    "id": 382,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "494:4:2",
@@ -765,12 +765,12 @@
               "src": "461:44:2"
             },
             "returnParameters": {
-              "id": 351,
+              "id": 385,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "516:0:2"
             },
-            "scope": 457,
+            "scope": 491,
             "src": "449:256:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -778,14 +778,14 @@
           },
           {
             "body": {
-              "id": 422,
+              "id": 456,
               "nodeType": "Block",
               "src": "924:183:2",
               "statements": [
                 {
                   "condition": {
                     "argumentTypes": null,
-                    "id": 395,
+                    "id": 429,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -800,25 +800,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 391,
+                          "id": 425,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "937:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 393,
+                        "id": 427,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 392,
+                          "id": 426,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 386,
+                          "referencedDeclaration": 420,
                           "src": "944:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -832,18 +832,18 @@
                         "nodeType": "IndexAccess",
                         "src": "937:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 394,
+                      "id": 428,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "exists",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 334,
+                      "referencedDeclaration": 368,
                       "src": "937:21:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -856,18 +856,18 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 407,
+                  "id": 441,
                   "nodeType": "IfStatement",
                   "src": "932:83:2",
                   "trueBody": {
-                    "id": 406,
+                    "id": 440,
                     "nodeType": "Block",
                     "src": "960:55:2",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 404,
+                          "id": 438,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -876,25 +876,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 396,
+                              "id": 430,
                               "name": "scores",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 343,
+                              "referencedDeclaration": 377,
                               "src": "972:6:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                                 "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                               }
                             },
-                            "id": 398,
+                            "id": 432,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 397,
+                              "id": 431,
                               "name": "target",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 386,
+                              "referencedDeclaration": 420,
                               "src": "979:6:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -908,7 +908,7 @@
                             "nodeType": "IndexAccess",
                             "src": "972:14:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Score_$339_storage",
+                              "typeIdentifier": "t_struct$_Score_$373_storage",
                               "typeString": "struct RateStorage.Score storage ref"
                             }
                           },
@@ -920,7 +920,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "74727565",
-                                "id": 400,
+                                "id": 434,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -938,7 +938,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "30",
-                                "id": 401,
+                                "id": 435,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -956,7 +956,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "30",
-                                "id": 402,
+                                "id": 436,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -987,18 +987,18 @@
                                   "typeString": "int_const 0"
                                 }
                               ],
-                              "id": 399,
+                              "id": 433,
                               "name": "Score",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 339,
+                              "referencedDeclaration": 373,
                               "src": "989:5:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_struct$_Score_$339_storage_ptr_$",
+                                "typeIdentifier": "t_type$_t_struct$_Score_$373_storage_ptr_$",
                                 "typeString": "type(struct RateStorage.Score storage pointer)"
                               }
                             },
-                            "id": 403,
+                            "id": 437,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1008,17 +1008,17 @@
                             "nodeType": "FunctionCall",
                             "src": "989:17:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Score_$339_memory",
+                              "typeIdentifier": "t_struct$_Score_$373_memory",
                               "typeString": "struct RateStorage.Score memory"
                             }
                           },
                           "src": "972:34:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Score_$339_storage",
+                            "typeIdentifier": "t_struct$_Score_$373_storage",
                             "typeString": "struct RateStorage.Score storage ref"
                           }
                         },
-                        "id": 405,
+                        "id": 439,
                         "nodeType": "ExpressionStatement",
                         "src": "972:34:2"
                       }
@@ -1028,7 +1028,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 413,
+                    "id": 447,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1039,25 +1039,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 408,
+                          "id": 442,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "1022:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 410,
+                        "id": 444,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 409,
+                          "id": 443,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 386,
+                          "referencedDeclaration": 420,
                           "src": "1029:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1071,18 +1071,18 @@
                         "nodeType": "IndexAccess",
                         "src": "1022:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 411,
+                      "id": 445,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "cumulativeScore",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 336,
+                      "referencedDeclaration": 370,
                       "src": "1022:30:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -1093,11 +1093,11 @@
                     "operator": "+=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 412,
+                      "id": 446,
                       "name": "wScore",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 388,
+                      "referencedDeclaration": 422,
                       "src": "1056:6:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -1110,14 +1110,14 @@
                       "typeString": "int256"
                     }
                   },
-                  "id": 414,
+                  "id": 448,
                   "nodeType": "ExpressionStatement",
                   "src": "1022:40:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 420,
+                    "id": 454,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1128,25 +1128,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 415,
+                          "id": 449,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "1070:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 417,
+                        "id": 451,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 416,
+                          "id": 450,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 386,
+                          "referencedDeclaration": 420,
                           "src": "1077:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1160,18 +1160,18 @@
                         "nodeType": "IndexAccess",
                         "src": "1070:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 418,
+                      "id": 452,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "totalRatings",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 338,
+                      "referencedDeclaration": 372,
                       "src": "1070:27:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1183,7 +1183,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 419,
+                      "id": 453,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1204,29 +1204,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 421,
+                  "id": 455,
                   "nodeType": "ExpressionStatement",
                   "src": "1070:32:2"
                 }
               ]
             },
             "documentation": "Add a rating\n@param target The address' score we're adding to\n@param wScore The weighted rating to add to the score\n@return success",
-            "id": 423,
+            "id": 457,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "add",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 389,
+              "id": 423,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 386,
+                  "id": 420,
                   "name": "target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 423,
+                  "scope": 457,
                   "src": "886:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1235,7 +1235,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 385,
+                    "id": 419,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "886:7:2",
@@ -1250,10 +1250,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 388,
+                  "id": 422,
                   "name": "wScore",
                   "nodeType": "VariableDeclaration",
-                  "scope": 423,
+                  "scope": 457,
                   "src": "902:10:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1262,7 +1262,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 387,
+                    "id": 421,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
                     "src": "902:3:2",
@@ -1278,12 +1278,12 @@
               "src": "885:28:2"
             },
             "returnParameters": {
-              "id": 390,
+              "id": 424,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "924:0:2"
             },
-            "scope": 457,
+            "scope": 491,
             "src": "873:234:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1291,7 +1291,7 @@
           },
           {
             "body": {
-              "id": 455,
+              "id": 489,
               "nodeType": "Block",
               "src": "1324:175:2",
               "statements": [
@@ -1302,7 +1302,7 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 437,
+                    "id": 471,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1313,25 +1313,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 432,
+                          "id": 466,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "1336:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 434,
+                        "id": 468,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 433,
+                          "id": 467,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 425,
+                          "referencedDeclaration": 459,
                           "src": "1343:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1345,18 +1345,18 @@
                         "nodeType": "IndexAccess",
                         "src": "1336:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 435,
+                      "id": 469,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "exists",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 334,
+                      "referencedDeclaration": 368,
                       "src": "1336:21:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -1368,7 +1368,7 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 436,
+                      "id": 470,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1390,7 +1390,7 @@
                     }
                   },
                   "falseBody": {
-                    "id": 453,
+                    "id": 487,
                     "nodeType": "Block",
                     "src": "1462:33:2",
                     "statements": [
@@ -1401,7 +1401,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 449,
+                              "id": 483,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1419,7 +1419,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 450,
+                              "id": 484,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1435,7 +1435,7 @@
                               "value": "0"
                             }
                           ],
-                          "id": 451,
+                          "id": 485,
                           "isConstant": false,
                           "isInlineArray": false,
                           "isLValue": false,
@@ -1448,18 +1448,18 @@
                             "typeString": "tuple(int_const 0,int_const 0)"
                           }
                         },
-                        "functionReturnParameters": 431,
-                        "id": 452,
+                        "functionReturnParameters": 465,
+                        "id": 486,
                         "nodeType": "Return",
                         "src": "1474:12:2"
                       }
                     ]
                   },
-                  "id": 454,
+                  "id": 488,
                   "nodeType": "IfStatement",
                   "src": "1332:163:2",
                   "trueBody": {
-                    "id": 448,
+                    "id": 482,
                     "nodeType": "Block",
                     "src": "1367:89:2",
                     "statements": [
@@ -1473,25 +1473,25 @@
                                 "argumentTypes": null,
                                 "baseExpression": {
                                   "argumentTypes": null,
-                                  "id": 438,
+                                  "id": 472,
                                   "name": "scores",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 343,
+                                  "referencedDeclaration": 377,
                                   "src": "1387:6:2",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                                     "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                                   }
                                 },
-                                "id": 440,
+                                "id": 474,
                                 "indexExpression": {
                                   "argumentTypes": null,
-                                  "id": 439,
+                                  "id": 473,
                                   "name": "target",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 425,
+                                  "referencedDeclaration": 459,
                                   "src": "1394:6:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -1505,18 +1505,18 @@
                                 "nodeType": "IndexAccess",
                                 "src": "1387:14:2",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Score_$339_storage",
+                                  "typeIdentifier": "t_struct$_Score_$373_storage",
                                   "typeString": "struct RateStorage.Score storage ref"
                                 }
                               },
-                              "id": 441,
+                              "id": 475,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "cumulativeScore",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 336,
+                              "referencedDeclaration": 370,
                               "src": "1387:30:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_int256",
@@ -1529,25 +1529,25 @@
                                 "argumentTypes": null,
                                 "baseExpression": {
                                   "argumentTypes": null,
-                                  "id": 442,
+                                  "id": 476,
                                   "name": "scores",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 343,
+                                  "referencedDeclaration": 377,
                                   "src": "1419:6:2",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                                     "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                                   }
                                 },
-                                "id": 444,
+                                "id": 478,
                                 "indexExpression": {
                                   "argumentTypes": null,
-                                  "id": 443,
+                                  "id": 477,
                                   "name": "target",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 425,
+                                  "referencedDeclaration": 459,
                                   "src": "1426:6:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -1561,18 +1561,18 @@
                                 "nodeType": "IndexAccess",
                                 "src": "1419:14:2",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Score_$339_storage",
+                                  "typeIdentifier": "t_struct$_Score_$373_storage",
                                   "typeString": "struct RateStorage.Score storage ref"
                                 }
                               },
-                              "id": 445,
+                              "id": 479,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "totalRatings",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 338,
+                              "referencedDeclaration": 372,
                               "src": "1419:27:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -1580,7 +1580,7 @@
                               }
                             }
                           ],
-                          "id": 446,
+                          "id": 480,
                           "isConstant": false,
                           "isInlineArray": false,
                           "isLValue": false,
@@ -1593,8 +1593,8 @@
                             "typeString": "tuple(int256,uint256)"
                           }
                         },
-                        "functionReturnParameters": 431,
-                        "id": 447,
+                        "functionReturnParameters": 465,
+                        "id": 481,
                         "nodeType": "Return",
                         "src": "1379:68:2"
                       }
@@ -1604,22 +1604,22 @@
               ]
             },
             "documentation": "Get the score for an address\n@param target The address' score to return\n@return cumulative score\n@return total ratings",
-            "id": 456,
+            "id": 490,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "get",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 426,
+              "id": 460,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 425,
+                  "id": 459,
                   "name": "target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 456,
+                  "scope": 490,
                   "src": "1274:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1628,7 +1628,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 424,
+                    "id": 458,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1274:7:2",
@@ -1645,15 +1645,15 @@
               "src": "1273:16:2"
             },
             "returnParameters": {
-              "id": 431,
+              "id": 465,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 428,
+                  "id": 462,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 456,
+                  "scope": 490,
                   "src": "1313:3:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1662,7 +1662,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 427,
+                    "id": 461,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
                     "src": "1313:3:2",
@@ -1676,10 +1676,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 430,
+                  "id": 464,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 456,
+                  "scope": 490,
                   "src": "1318:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1688,7 +1688,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 429,
+                    "id": 463,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1318:4:2",
@@ -1703,14 +1703,14 @@
               ],
               "src": "1312:11:2"
             },
-            "scope": 457,
+            "scope": 491,
             "src": "1261:238:2",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 458,
+        "scope": 492,
         "src": "25:1476:2"
       }
     ],
@@ -1720,14 +1720,14 @@
     "absolutePath": "/home/cecilimon/Auctionly/contracts/ratestorage.sol",
     "exportedSymbols": {
       "RateStorage": [
-        457
+        491
       ]
     },
-    "id": 458,
+    "id": 492,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 332,
+        "id": 366,
         "literals": [
           "solidity",
           "^",
@@ -1743,23 +1743,23 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 457,
+        "id": 491,
         "linearizedBaseContracts": [
-          457
+          491
         ],
         "name": "RateStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "RateStorage.Score",
-            "id": 339,
+            "id": 373,
             "members": [
               {
                 "constant": false,
-                "id": 334,
+                "id": 368,
                 "name": "exists",
                 "nodeType": "VariableDeclaration",
-                "scope": 339,
+                "scope": 373,
                 "src": "71:11:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1768,7 +1768,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 333,
+                  "id": 367,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "71:4:2",
@@ -1782,10 +1782,10 @@
               },
               {
                 "constant": false,
-                "id": 336,
+                "id": 370,
                 "name": "cumulativeScore",
                 "nodeType": "VariableDeclaration",
-                "scope": 339,
+                "scope": 373,
                 "src": "90:19:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1794,7 +1794,7 @@
                   "typeString": "int256"
                 },
                 "typeName": {
-                  "id": 335,
+                  "id": 369,
                   "name": "int",
                   "nodeType": "ElementaryTypeName",
                   "src": "90:3:2",
@@ -1808,10 +1808,10 @@
               },
               {
                 "constant": false,
-                "id": 338,
+                "id": 372,
                 "name": "totalRatings",
                 "nodeType": "VariableDeclaration",
-                "scope": 339,
+                "scope": 373,
                 "src": "117:17:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1820,7 +1820,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 337,
+                  "id": 371,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "117:4:2",
@@ -1835,27 +1835,27 @@
             ],
             "name": "Score",
             "nodeType": "StructDefinition",
-            "scope": 457,
+            "scope": 491,
             "src": "50:89:2",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 343,
+            "id": 377,
             "name": "scores",
             "nodeType": "VariableDeclaration",
-            "scope": 457,
+            "scope": 491,
             "src": "143:42:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
               "typeString": "mapping(address => struct RateStorage.Score)"
             },
             "typeName": {
-              "id": 342,
+              "id": 376,
               "keyType": {
-                "id": 340,
+                "id": 374,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "152:7:2",
@@ -1867,18 +1867,18 @@
               "nodeType": "Mapping",
               "src": "143:26:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                 "typeString": "mapping(address => struct RateStorage.Score)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 341,
+                "id": 375,
                 "name": "Score",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 339,
+                "referencedDeclaration": 373,
                 "src": "163:5:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Score_$339_storage_ptr",
+                  "typeIdentifier": "t_struct$_Score_$373_storage_ptr",
                   "typeString": "struct RateStorage.Score"
                 }
               }
@@ -1888,14 +1888,14 @@
           },
           {
             "body": {
-              "id": 383,
+              "id": 417,
               "nodeType": "Block",
               "src": "516:189:2",
               "statements": [
                 {
                   "condition": {
                     "argumentTypes": null,
-                    "id": 356,
+                    "id": 390,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1910,25 +1910,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 352,
+                          "id": 386,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "529:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 354,
+                        "id": 388,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 353,
+                          "id": 387,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 345,
+                          "referencedDeclaration": 379,
                           "src": "536:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1942,18 +1942,18 @@
                         "nodeType": "IndexAccess",
                         "src": "529:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 355,
+                      "id": 389,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "exists",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 334,
+                      "referencedDeclaration": 368,
                       "src": "529:21:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -1966,18 +1966,18 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 368,
+                  "id": 402,
                   "nodeType": "IfStatement",
                   "src": "524:83:2",
                   "trueBody": {
-                    "id": 367,
+                    "id": 401,
                     "nodeType": "Block",
                     "src": "552:55:2",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 365,
+                          "id": 399,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1986,25 +1986,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 357,
+                              "id": 391,
                               "name": "scores",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 343,
+                              "referencedDeclaration": 377,
                               "src": "564:6:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                                 "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                               }
                             },
-                            "id": 359,
+                            "id": 393,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 358,
+                              "id": 392,
                               "name": "target",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 345,
+                              "referencedDeclaration": 379,
                               "src": "571:6:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -2018,7 +2018,7 @@
                             "nodeType": "IndexAccess",
                             "src": "564:14:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Score_$339_storage",
+                              "typeIdentifier": "t_struct$_Score_$373_storage",
                               "typeString": "struct RateStorage.Score storage ref"
                             }
                           },
@@ -2030,7 +2030,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "74727565",
-                                "id": 361,
+                                "id": 395,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -2048,7 +2048,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "30",
-                                "id": 362,
+                                "id": 396,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -2066,7 +2066,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "30",
-                                "id": 363,
+                                "id": 397,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -2097,18 +2097,18 @@
                                   "typeString": "int_const 0"
                                 }
                               ],
-                              "id": 360,
+                              "id": 394,
                               "name": "Score",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 339,
+                              "referencedDeclaration": 373,
                               "src": "581:5:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_struct$_Score_$339_storage_ptr_$",
+                                "typeIdentifier": "t_type$_t_struct$_Score_$373_storage_ptr_$",
                                 "typeString": "type(struct RateStorage.Score storage pointer)"
                               }
                             },
-                            "id": 364,
+                            "id": 398,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2118,17 +2118,17 @@
                             "nodeType": "FunctionCall",
                             "src": "581:17:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Score_$339_memory",
+                              "typeIdentifier": "t_struct$_Score_$373_memory",
                               "typeString": "struct RateStorage.Score memory"
                             }
                           },
                           "src": "564:34:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Score_$339_storage",
+                            "typeIdentifier": "t_struct$_Score_$373_storage",
                             "typeString": "struct RateStorage.Score storage ref"
                           }
                         },
-                        "id": 366,
+                        "id": 400,
                         "nodeType": "ExpressionStatement",
                         "src": "564:34:2"
                       }
@@ -2138,7 +2138,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 374,
+                    "id": 408,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2149,25 +2149,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 369,
+                          "id": 403,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "614:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 371,
+                        "id": 405,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 370,
+                          "id": 404,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 345,
+                          "referencedDeclaration": 379,
                           "src": "621:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2181,18 +2181,18 @@
                         "nodeType": "IndexAccess",
                         "src": "614:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 372,
+                      "id": 406,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "cumulativeScore",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 336,
+                      "referencedDeclaration": 370,
                       "src": "614:30:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -2203,11 +2203,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 373,
+                      "id": 407,
                       "name": "cumulative",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 347,
+                      "referencedDeclaration": 381,
                       "src": "647:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -2220,14 +2220,14 @@
                       "typeString": "int256"
                     }
                   },
-                  "id": 375,
+                  "id": 409,
                   "nodeType": "ExpressionStatement",
                   "src": "614:43:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 381,
+                    "id": 415,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2238,25 +2238,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 376,
+                          "id": 410,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "665:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 378,
+                        "id": 412,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 377,
+                          "id": 411,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 345,
+                          "referencedDeclaration": 379,
                           "src": "672:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2270,18 +2270,18 @@
                         "nodeType": "IndexAccess",
                         "src": "665:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 379,
+                      "id": 413,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "totalRatings",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 338,
+                      "referencedDeclaration": 372,
                       "src": "665:27:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2292,11 +2292,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 380,
+                      "id": 414,
                       "name": "total",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 349,
+                      "referencedDeclaration": 383,
                       "src": "695:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2309,29 +2309,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 382,
+                  "id": 416,
                   "nodeType": "ExpressionStatement",
                   "src": "665:35:2"
                 }
               ]
             },
             "documentation": "Set a Score\n@param target The address' score we're setting\n@param cumulative The cumulative score for the address\n@param total Total individual ratings for the address\n@return success If the set was completed successfully",
-            "id": 384,
+            "id": 418,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "set",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 350,
+              "id": 384,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 345,
+                  "id": 379,
                   "name": "target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 384,
+                  "scope": 418,
                   "src": "462:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2340,7 +2340,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 344,
+                    "id": 378,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "462:7:2",
@@ -2355,10 +2355,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 347,
+                  "id": 381,
                   "name": "cumulative",
                   "nodeType": "VariableDeclaration",
-                  "scope": 384,
+                  "scope": 418,
                   "src": "478:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2367,7 +2367,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 346,
+                    "id": 380,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
                     "src": "478:3:2",
@@ -2381,10 +2381,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 349,
+                  "id": 383,
                   "name": "total",
                   "nodeType": "VariableDeclaration",
-                  "scope": 384,
+                  "scope": 418,
                   "src": "494:10:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2393,7 +2393,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 348,
+                    "id": 382,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "494:4:2",
@@ -2409,12 +2409,12 @@
               "src": "461:44:2"
             },
             "returnParameters": {
-              "id": 351,
+              "id": 385,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "516:0:2"
             },
-            "scope": 457,
+            "scope": 491,
             "src": "449:256:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2422,14 +2422,14 @@
           },
           {
             "body": {
-              "id": 422,
+              "id": 456,
               "nodeType": "Block",
               "src": "924:183:2",
               "statements": [
                 {
                   "condition": {
                     "argumentTypes": null,
-                    "id": 395,
+                    "id": 429,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2444,25 +2444,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 391,
+                          "id": 425,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "937:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 393,
+                        "id": 427,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 392,
+                          "id": 426,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 386,
+                          "referencedDeclaration": 420,
                           "src": "944:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2476,18 +2476,18 @@
                         "nodeType": "IndexAccess",
                         "src": "937:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 394,
+                      "id": 428,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "exists",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 334,
+                      "referencedDeclaration": 368,
                       "src": "937:21:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -2500,18 +2500,18 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 407,
+                  "id": 441,
                   "nodeType": "IfStatement",
                   "src": "932:83:2",
                   "trueBody": {
-                    "id": 406,
+                    "id": 440,
                     "nodeType": "Block",
                     "src": "960:55:2",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 404,
+                          "id": 438,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2520,25 +2520,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 396,
+                              "id": 430,
                               "name": "scores",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 343,
+                              "referencedDeclaration": 377,
                               "src": "972:6:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                                 "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                               }
                             },
-                            "id": 398,
+                            "id": 432,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 397,
+                              "id": 431,
                               "name": "target",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 386,
+                              "referencedDeclaration": 420,
                               "src": "979:6:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -2552,7 +2552,7 @@
                             "nodeType": "IndexAccess",
                             "src": "972:14:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Score_$339_storage",
+                              "typeIdentifier": "t_struct$_Score_$373_storage",
                               "typeString": "struct RateStorage.Score storage ref"
                             }
                           },
@@ -2564,7 +2564,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "74727565",
-                                "id": 400,
+                                "id": 434,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -2582,7 +2582,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "30",
-                                "id": 401,
+                                "id": 435,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -2600,7 +2600,7 @@
                               {
                                 "argumentTypes": null,
                                 "hexValue": "30",
-                                "id": 402,
+                                "id": 436,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -2631,18 +2631,18 @@
                                   "typeString": "int_const 0"
                                 }
                               ],
-                              "id": 399,
+                              "id": 433,
                               "name": "Score",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 339,
+                              "referencedDeclaration": 373,
                               "src": "989:5:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_struct$_Score_$339_storage_ptr_$",
+                                "typeIdentifier": "t_type$_t_struct$_Score_$373_storage_ptr_$",
                                 "typeString": "type(struct RateStorage.Score storage pointer)"
                               }
                             },
-                            "id": 403,
+                            "id": 437,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2652,17 +2652,17 @@
                             "nodeType": "FunctionCall",
                             "src": "989:17:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Score_$339_memory",
+                              "typeIdentifier": "t_struct$_Score_$373_memory",
                               "typeString": "struct RateStorage.Score memory"
                             }
                           },
                           "src": "972:34:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Score_$339_storage",
+                            "typeIdentifier": "t_struct$_Score_$373_storage",
                             "typeString": "struct RateStorage.Score storage ref"
                           }
                         },
-                        "id": 405,
+                        "id": 439,
                         "nodeType": "ExpressionStatement",
                         "src": "972:34:2"
                       }
@@ -2672,7 +2672,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 413,
+                    "id": 447,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2683,25 +2683,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 408,
+                          "id": 442,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "1022:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 410,
+                        "id": 444,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 409,
+                          "id": 443,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 386,
+                          "referencedDeclaration": 420,
                           "src": "1029:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2715,18 +2715,18 @@
                         "nodeType": "IndexAccess",
                         "src": "1022:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 411,
+                      "id": 445,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "cumulativeScore",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 336,
+                      "referencedDeclaration": 370,
                       "src": "1022:30:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -2737,11 +2737,11 @@
                     "operator": "+=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 412,
+                      "id": 446,
                       "name": "wScore",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 388,
+                      "referencedDeclaration": 422,
                       "src": "1056:6:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -2754,14 +2754,14 @@
                       "typeString": "int256"
                     }
                   },
-                  "id": 414,
+                  "id": 448,
                   "nodeType": "ExpressionStatement",
                   "src": "1022:40:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 420,
+                    "id": 454,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2772,25 +2772,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 415,
+                          "id": 449,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "1070:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 417,
+                        "id": 451,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 416,
+                          "id": 450,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 386,
+                          "referencedDeclaration": 420,
                           "src": "1077:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2804,18 +2804,18 @@
                         "nodeType": "IndexAccess",
                         "src": "1070:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 418,
+                      "id": 452,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "totalRatings",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 338,
+                      "referencedDeclaration": 372,
                       "src": "1070:27:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2827,7 +2827,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 419,
+                      "id": 453,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2848,29 +2848,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 421,
+                  "id": 455,
                   "nodeType": "ExpressionStatement",
                   "src": "1070:32:2"
                 }
               ]
             },
             "documentation": "Add a rating\n@param target The address' score we're adding to\n@param wScore The weighted rating to add to the score\n@return success",
-            "id": 423,
+            "id": 457,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "add",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 389,
+              "id": 423,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 386,
+                  "id": 420,
                   "name": "target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 423,
+                  "scope": 457,
                   "src": "886:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2879,7 +2879,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 385,
+                    "id": 419,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "886:7:2",
@@ -2894,10 +2894,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 388,
+                  "id": 422,
                   "name": "wScore",
                   "nodeType": "VariableDeclaration",
-                  "scope": 423,
+                  "scope": 457,
                   "src": "902:10:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2906,7 +2906,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 387,
+                    "id": 421,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
                     "src": "902:3:2",
@@ -2922,12 +2922,12 @@
               "src": "885:28:2"
             },
             "returnParameters": {
-              "id": 390,
+              "id": 424,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "924:0:2"
             },
-            "scope": 457,
+            "scope": 491,
             "src": "873:234:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2935,7 +2935,7 @@
           },
           {
             "body": {
-              "id": 455,
+              "id": 489,
               "nodeType": "Block",
               "src": "1324:175:2",
               "statements": [
@@ -2946,7 +2946,7 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 437,
+                    "id": 471,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2957,25 +2957,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 432,
+                          "id": 466,
                           "name": "scores",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 343,
+                          "referencedDeclaration": 377,
                           "src": "1336:6:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                             "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                           }
                         },
-                        "id": 434,
+                        "id": 468,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 433,
+                          "id": 467,
                           "name": "target",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 425,
+                          "referencedDeclaration": 459,
                           "src": "1343:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2989,18 +2989,18 @@
                         "nodeType": "IndexAccess",
                         "src": "1336:14:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Score_$339_storage",
+                          "typeIdentifier": "t_struct$_Score_$373_storage",
                           "typeString": "struct RateStorage.Score storage ref"
                         }
                       },
-                      "id": 435,
+                      "id": 469,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "exists",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 334,
+                      "referencedDeclaration": 368,
                       "src": "1336:21:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -3012,7 +3012,7 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 436,
+                      "id": 470,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3034,7 +3034,7 @@
                     }
                   },
                   "falseBody": {
-                    "id": 453,
+                    "id": 487,
                     "nodeType": "Block",
                     "src": "1462:33:2",
                     "statements": [
@@ -3045,7 +3045,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 449,
+                              "id": 483,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -3063,7 +3063,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 450,
+                              "id": 484,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -3079,7 +3079,7 @@
                               "value": "0"
                             }
                           ],
-                          "id": 451,
+                          "id": 485,
                           "isConstant": false,
                           "isInlineArray": false,
                           "isLValue": false,
@@ -3092,18 +3092,18 @@
                             "typeString": "tuple(int_const 0,int_const 0)"
                           }
                         },
-                        "functionReturnParameters": 431,
-                        "id": 452,
+                        "functionReturnParameters": 465,
+                        "id": 486,
                         "nodeType": "Return",
                         "src": "1474:12:2"
                       }
                     ]
                   },
-                  "id": 454,
+                  "id": 488,
                   "nodeType": "IfStatement",
                   "src": "1332:163:2",
                   "trueBody": {
-                    "id": 448,
+                    "id": 482,
                     "nodeType": "Block",
                     "src": "1367:89:2",
                     "statements": [
@@ -3117,25 +3117,25 @@
                                 "argumentTypes": null,
                                 "baseExpression": {
                                   "argumentTypes": null,
-                                  "id": 438,
+                                  "id": 472,
                                   "name": "scores",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 343,
+                                  "referencedDeclaration": 377,
                                   "src": "1387:6:2",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                                     "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                                   }
                                 },
-                                "id": 440,
+                                "id": 474,
                                 "indexExpression": {
                                   "argumentTypes": null,
-                                  "id": 439,
+                                  "id": 473,
                                   "name": "target",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 425,
+                                  "referencedDeclaration": 459,
                                   "src": "1394:6:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -3149,18 +3149,18 @@
                                 "nodeType": "IndexAccess",
                                 "src": "1387:14:2",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Score_$339_storage",
+                                  "typeIdentifier": "t_struct$_Score_$373_storage",
                                   "typeString": "struct RateStorage.Score storage ref"
                                 }
                               },
-                              "id": 441,
+                              "id": 475,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "cumulativeScore",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 336,
+                              "referencedDeclaration": 370,
                               "src": "1387:30:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_int256",
@@ -3173,25 +3173,25 @@
                                 "argumentTypes": null,
                                 "baseExpression": {
                                   "argumentTypes": null,
-                                  "id": 442,
+                                  "id": 476,
                                   "name": "scores",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 343,
+                                  "referencedDeclaration": 377,
                                   "src": "1419:6:2",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$339_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Score_$373_storage_$",
                                     "typeString": "mapping(address => struct RateStorage.Score storage ref)"
                                   }
                                 },
-                                "id": 444,
+                                "id": 478,
                                 "indexExpression": {
                                   "argumentTypes": null,
-                                  "id": 443,
+                                  "id": 477,
                                   "name": "target",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 425,
+                                  "referencedDeclaration": 459,
                                   "src": "1426:6:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -3205,18 +3205,18 @@
                                 "nodeType": "IndexAccess",
                                 "src": "1419:14:2",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Score_$339_storage",
+                                  "typeIdentifier": "t_struct$_Score_$373_storage",
                                   "typeString": "struct RateStorage.Score storage ref"
                                 }
                               },
-                              "id": 445,
+                              "id": 479,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "totalRatings",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 338,
+                              "referencedDeclaration": 372,
                               "src": "1419:27:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -3224,7 +3224,7 @@
                               }
                             }
                           ],
-                          "id": 446,
+                          "id": 480,
                           "isConstant": false,
                           "isInlineArray": false,
                           "isLValue": false,
@@ -3237,8 +3237,8 @@
                             "typeString": "tuple(int256,uint256)"
                           }
                         },
-                        "functionReturnParameters": 431,
-                        "id": 447,
+                        "functionReturnParameters": 465,
+                        "id": 481,
                         "nodeType": "Return",
                         "src": "1379:68:2"
                       }
@@ -3248,22 +3248,22 @@
               ]
             },
             "documentation": "Get the score for an address\n@param target The address' score to return\n@return cumulative score\n@return total ratings",
-            "id": 456,
+            "id": 490,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "get",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 426,
+              "id": 460,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 425,
+                  "id": 459,
                   "name": "target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 456,
+                  "scope": 490,
                   "src": "1274:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3272,7 +3272,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 424,
+                    "id": 458,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1274:7:2",
@@ -3289,15 +3289,15 @@
               "src": "1273:16:2"
             },
             "returnParameters": {
-              "id": 431,
+              "id": 465,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 428,
+                  "id": 462,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 456,
+                  "scope": 490,
                   "src": "1313:3:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3306,7 +3306,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 427,
+                    "id": 461,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
                     "src": "1313:3:2",
@@ -3320,10 +3320,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 430,
+                  "id": 464,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 456,
+                  "scope": 490,
                   "src": "1318:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3332,7 +3332,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 429,
+                    "id": 463,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1318:4:2",
@@ -3347,14 +3347,14 @@
               ],
               "src": "1312:11:2"
             },
-            "scope": 457,
+            "scope": 491,
             "src": "1261:238:2",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 458,
+        "scope": 492,
         "src": "25:1476:2"
       }
     ],
@@ -3368,12 +3368,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x69b1aEbf7b0F98212339dEa4e0FF17ff399b6C81",
-      "transactionHash": "0x53afc606a5024ef027cafe657ebc1dd3b3044f31122b425127614613f673c6b5"
+      "address": "0x31e6C0146348E93aa018446AD5BCA5a24919225c",
+      "transactionHash": "0x1c026f5858d701be9f8b66e551436e77de83f75c7c622dc762fbb0b688d62758"
     }
   },
   "schemaVersion": "3.0.17",
-  "updatedAt": "2019-11-22T10:50:13.507Z",
+  "updatedAt": "2019-11-27T08:17:22.700Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {

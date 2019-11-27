@@ -9,16 +9,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Ehtereum Reputation test</h1>
+    <h1>Ethereum Reputation test</h1>
     <div id="accountRow">
       <!-- Account list will show here-->
     </div>
     <div id="accountTemplate">
       <br/><br/>
-      <strong>Name</strong> : <span class="account-name">kang</span><br>
-      <strong>Account</strong> : <span class="account-address">0x16CB5b77226C7FCdB91329A6F96213a0a18FD72d</span><br>
-      <textarea class="rate-num" name="rate" rows="1" cols="8"></textarea>
-      <button type="button" class="rate-btn" data-id = "0">Submit rate</button>
+      <strong>Name</strong> : <span class="account-name" name-id = "0">kang</span><br>
+      <strong>Account</strong> : <span class="account-address" account-id = "0">0x16CB5b77226C7FCdB91329A6F96213a0a18FD72d</span><br>
+      <textarea class="rate-num" name="rate" rows="1" cols="8" rating-id = "0"></textarea>
+      <button type="button" class="rate-btn" data-id = "0">Submit rate</button><br>
+      <strong>Rate</strong> : <span class="account-rate" data-id="0">0</span>
+      <button type="button" class="getRate-btn" data-id="0">Get Rate</button>
+      <br><br>
+    </div>
+    <div class="Notice">
+      <br><br>
+      <span>Notice : please refresh after rating.</span><br>
+      <span>Don't know the reason, but soon will find out.</span>
     </div>
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>

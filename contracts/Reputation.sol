@@ -6,29 +6,47 @@ contract Reputation {
 
   address internal storageAddress;
   uint internal waitTime;
+  mapping (address => uint) internal lastRating;
+
   event Error(
       address sender,
       string message
   );
+
   event Rating(
       address by,
       address who,
       int rating
   );
 
+  event scoreValue(
+    int scoreVal
+  );
+  /**
+   * Delay ratings to be at least waitTime apart
+   */
+  modifier delay() {
+      if (lastRating[msg.sender] > now - waitTime) {
+          revert();
+      }
+      _;
+  }
+
 /*Contract that takes ratings and calculates a reputation score.  It uses the
     RatingStore contract as its data storage.
     Ratings can be from -5(worst) to 5(best) and are weighted according to the
     score of the rater. This weight can have a significant skewing towards the
     positive or negative but the representative score can not be below -5 or
-    above 5. */
+    above 5. Raters can not rate more often than waitTime, nor can they rate
+    themselves. */
 
+//waitTime is usually 60
   constructor(address _storageAddress, uint _wait) public {
     storageAddress = _storageAddress;
     waitTime = _wait;
   }
 
-  function rate(address who, int rating) external payable {
+  function rate(address who, int rating) external delay payable {
 
       // Check rating for sanity
       require(rating <= 5 && rating >= -5, "Rate between -5 and 5");
@@ -85,7 +103,7 @@ contract Reputation {
       workRating += weight;
 
       // Set last rating timestamp
-      // lastRating[msg.sender] = now;
+      lastRating[msg.sender] = now;
 
       // Send event of the rating
       emit Rating(msg.sender, who, workRating);
@@ -122,7 +140,7 @@ contract Reputation {
           score = -500;
       }
 
-  }
+    }
 
   /**
    * Returns the cumulative score and count of ratings for an address

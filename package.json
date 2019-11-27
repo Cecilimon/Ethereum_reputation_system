@@ -16,7 +16,6 @@
   "license": "ISC",
   "dependencies": {
     "lite-server": "^2.5.4",
-    "ts-loader": "^6.2.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "zeppelin-solidity": "1.12.0"
