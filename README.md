@@ -1,8 +1,12 @@
-# Ethereum_reputation_system_Ethrep
-Web using Etherep
+# Ethereum reputation system using Truffle.
 
+Based on the pet-shop tutorial-Truffle,
+Got most of the idea from
 Etherep : Dapp Reputation system made by gointollc.
 
-Currently practicing on how to deploy a contract to ganache using truffle.
+- [x] Currently practicing on how to deploy a contract to ganache using truffle.
+- [x] Adapting it in the userinterface.
+- [ ] Sorting the scores and make classifications for the user score.
 
-& getting use to truffle and analyzing the Etherep contract and finding a way to integrate it in a individual Dapp.
+
+Currently working well with truffle & ganache
