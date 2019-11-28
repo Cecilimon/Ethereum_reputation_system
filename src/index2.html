@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Auction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Bid</h1>
+    <div id="productSpace">
+      <strong>Currently Logged-in</strong> : <span class="logged-user">Kang</span><br><br>
+      <strong>Name</strong> : <span class="product-name" name-id = "0">House</span><br>
+      <textarea class="charge-num" name="charge" rows="1" cols="8" bidding-id = "0"></textarea>
+      <button type="button" class="bid-btn" data-id = "0">bid for this good</button><br>
+
+      <strong>Bidders</strong> :
+      <div id="bidderSpace">
+        <span class="first-bid"></span><br>
+        <span class="second-bid"></span><br>
+      </div>
+      <div class="notice">
+        <a href="index.html">go to the auction section</a>
+
+      </div>
+    </div>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
