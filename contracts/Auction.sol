@@ -1,5 +1,6 @@
 pragma solidity ^0.5.3;
 
+
 contract Auction {
 
   struct AuctionInfo {
@@ -29,6 +30,7 @@ contract Auction {
 
 
   mapping (address => AuctionInfo) internal auctionInfos;
+  address[] bidderArray;
 
   //Adopting pet
   function bid(string memory bidder_name, uint charge ,uint objectId) public returns (uint) {
@@ -61,17 +63,19 @@ contract Auction {
     return auctionInfos[bidder].goodId;
   }
 
-  // function getBiddersWithId(uint _id) external returns (address[] memory) {
-  //   address[] memory tempBidder;
-  //
-  //   for (uint i = 0; i < mulBidders[_id].bidder.length; i++) {
-  //       tempBidder[i] = mulBidders[_id].bidder[i];
-  //
-  //   }
-  //   emit Error(tempBidder.length);
-  //
-  //   return tempBidder;
-  // }
+  function getBiddersAddressWithId(uint _id) external returns (address[] memory) {
+     address[] memory tempBidder;
+     bidderArray = tempBidder;
+
+     for (uint i = 0; i <mulBidders[_id].bidder.length; i++) {
+         bidderArray.push(mulBidders[_id].bidder[i]);
+
+     }
+     emit Error(tempBidder.length);
+
+     return bidderArray;
+  }
+
 
   function setAuctionInfo(address _address, string memory _name, uint _charge, uint _goodId) internal {
 

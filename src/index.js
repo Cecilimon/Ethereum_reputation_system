@@ -103,8 +103,12 @@ App = {
 
     console.log("data comes to showRate");
     console.log(rating);
-    $("[rate-id = '"+id+"']").replaceWith(rating).html();
+    $("[rate-id = '"+id+"']").html(rating);
 
+  },
+
+  refresh: async function(){
+    window.location.reload();
   },
 
   handleRate: async function(event) {
@@ -113,7 +117,7 @@ App = {
     var accountId = parseInt($(event.target).data('id'));
     console.log(accountId+" is the id");
 
-    var rateInstance;
+    var rateInstance = null;
 
     web3.eth.getAccounts(function(error, accounts) {
     if (error) {
@@ -124,19 +128,22 @@ App = {
 
     App.contracts.Reputation.deployed().then(async function(instance) {
         rateInstance = instance;
-
         // Execute rate as a transaction by sending account
 
         var rateAddress = $("[account-id = '"+accountId+"']").filter('span').text();
         var rateToWho = $(".account-name[name-id = '"+accountId+"']").filter('span').text();
-        var rating = $(".rate-num[rating-id = '"+accountId+"']").filter('textarea').val();
+        var rating = null;
+        rating = $(".rate-num[rating-id = '"+accountId+"']").filter('textarea').val();
         rating = parseInt(rating);
         console.log(rating+" is getting send");
         await rateInstance.rate(rateAddress,rating);
-        var ratingEvent = rateInstance.Rating();
+        var ratingEvent = null;
+        ratingEvent = rateInstance.Rating();
         ratingEvent.watch(function(error, result) {
           if(!error) {
             window.alert("Rated "+rating+" points to "+rateToWho);
+            console.log('alert');
+            return App.refresh();
           } else {
             console.log(error);
           }
@@ -263,7 +270,7 @@ App = {
     var bidderInfo = bidder + " : " +_charge;
     console.log(bidderInfo);
     // $("[rate-id = '"+id+"']").replaceWith(rating).html();
-    $('#bidderSpace').find('.first-bid').replaceWith(bidderInfo).html();
+    $('#bidderSpace').find('.first-bid').html(bidderInfo);
 
   }
 
